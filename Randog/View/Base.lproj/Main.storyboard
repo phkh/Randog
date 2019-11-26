@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Randog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="PZQ-Bw-L8x">
+                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nfl-SH-1PG">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="308"/>
+                                    </pickerView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jz4-rd-F6c">
+                                        <rect key="frame" x="0.0" y="318" width="374" height="500"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="500" id="iRZ-Jm-Zv0"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="jz4-rd-F6c" secondAttribute="bottom" id="aU7-c9-tG3"/>
+                                    <constraint firstAttribute="trailing" secondItem="jz4-rd-F6c" secondAttribute="trailing" id="kJ1-hb-e42"/>
+                                    <constraint firstItem="jz4-rd-F6c" firstAttribute="leading" secondItem="PZQ-Bw-L8x" secondAttribute="leading" id="r7k-wG-sQs"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PZQ-Bw-L8x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5j5-8I-eAH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PZQ-Bw-L8x" secondAttribute="trailing" constant="20" id="8Fs-jb-4xK"/>
+                            <constraint firstItem="PZQ-Bw-L8x" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QXb-Q3-uPI"/>
+                            <constraint firstItem="PZQ-Bw-L8x" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="S5p-SJ-ICS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="jz4-rd-F6c" id="fd7-B4-14p"/>
+                        <outlet property="pickerView" destination="Nfl-SH-1PG" id="PjN-Rk-gDF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>
